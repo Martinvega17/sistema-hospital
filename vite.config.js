@@ -7,16 +7,11 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
-                'resources/sass/app.scss',
-                'resources/js/app.js',
             ],
             refresh: [
                 ...refreshPaths,
                 'app/Livewire/**',
-            
             ],
-            refresh: true,
-
         }),
     ],
 });
