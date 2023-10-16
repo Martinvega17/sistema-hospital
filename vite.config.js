@@ -12,6 +12,10 @@ export default defineConfig({
                 ...refreshPaths,
                 'app/Livewire/**',
             ],
+                'resources/sass/app.scss',
+                'resources/js/app.js',
+            ],
+            refresh: true,
         }),
     ],
 });
