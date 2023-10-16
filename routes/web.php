@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -27,8 +27,7 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-=======
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
->>>>>>> 7cae1543549609b6cdfb202537101475d27ecc10
